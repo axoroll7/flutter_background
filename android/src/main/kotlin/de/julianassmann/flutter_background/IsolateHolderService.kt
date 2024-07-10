@@ -110,6 +110,7 @@ class IsolateHolderService : Service() {
             .setSmallIcon(imageId)
             .setContentIntent(pendingIntent)
             .setPriority(FlutterBackgroundPlugin.notificationImportance)
+            .setOngoing(true)
             .build()
 
         (getSystemService(Context.POWER_SERVICE) as PowerManager).run {
